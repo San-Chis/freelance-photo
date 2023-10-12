@@ -1,0 +1,22 @@
+.services-card {
+  width: 25%;
+  border: 1px solid #4b4136;
+  padding: 25px 25px;
+  &__image {
+    padding-bottom: 5px;
+  }
+  &__title {
+    padding-bottom: 5px;
+    h2 {
+      color: #ffae2b;
+      font-size: 29px;
+    }
+  }
+  &__text {
+    p {
+      color: #aca592;
+      font-size: 18px;
+		line-height: 23px;
+    }
+  }
+}

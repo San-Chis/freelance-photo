@@ -1,0 +1,39 @@
+.header {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  position: relative;
+  z-index: 100;
+}
+
+.header__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__logo {
+  color: #ffae2b;
+  margin-right: 30px;
+}
+
+.navigation-header {
+  &__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 120px;
+  }
+  &__link {
+    text-align: center;
+    color: #ffae2b;
+    position: relative;
+  }
+}
+
+.navigation-header-sub__item {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
