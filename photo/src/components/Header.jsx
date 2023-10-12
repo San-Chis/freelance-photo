@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container">
         <div className="header__body">
           <div className="header__logo">
-            <h2>Photo</h2>
+            <h2>Photographer</h2>
           </div>
           <div className="header__navigation navigation-header">
             <ul className="navigation-header__item">

@@ -26,6 +26,10 @@
     text-align: center;
     color: #ffae2b;
     position: relative;
+    &:hover {
+      color: #ff9e01;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -36,4 +40,11 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.navigation-header-sub__link {
+  color: #fcfcfc;
+  &:hover {
+    color: #ff9e01;
+  }
 }

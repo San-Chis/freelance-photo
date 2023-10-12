@@ -1,0 +1,13 @@
+.my-works {
+  padding-bottom: 50px;
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: center;
+  }
+}

@@ -1,9 +1,19 @@
 .services {
   padding-bottom: 50px;
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
 }
 .services__body {
   display: flex;
   flex-direction: row;
   text-align: center;
   gap: 1%;
+  margin-bottom: 50px;
 }

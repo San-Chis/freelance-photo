@@ -3,11 +3,16 @@ import ServicesCard from './ServicesCard'
 import meeting from '../img/services/meeting.svg'
 import filming from '../img/services/filming.svg'
 import retouch from '../img/services/retouch.svg'
+import Title from '../element/Title'
+import photo from '../img/services/photo.png'
 
 const Services = () => {
   return (
     <div className="services">
       <div className="container">
+        <div className="services__title">
+          <Title title={'Наші Послуги'} />
+        </div>
         <div className="services__body">
           <ServicesCard
             image={meeting}
@@ -30,6 +35,9 @@ const Services = () => {
             text={'У вас буде щонайменше 50 красивих фотографій'}
           />
         </div>
+      </div>
+      <div className="services__image">
+        <img src={photo} alt="" />
       </div>
     </div>
   )

@@ -1,0 +1,33 @@
+.myworks-card {
+  border: 1px solid #4b4136;
+  padding: 25px 25px;
+  &:hover {
+    border: 1px solid #7e6e5d;
+    .block-card-myworks__image {
+      img {
+        width: 99%;
+      }
+    }
+    .block-card-myworks__title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.block-card-myworks {
+  &__image {
+    padding-bottom: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    text-align: center;
+    h2 {
+      color: #ffae2b;
+      font-size: 29px;
+    }
+  }
+}

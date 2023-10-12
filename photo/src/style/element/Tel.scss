@@ -3,5 +3,11 @@
   background-color: #ffae2b;
   padding: 10px;
   span {
+    font-size: 22px;
+    color: black;
+  }
+  &:hover {
+    background-color: #ff9e01;
+    color: rgb(58, 58, 58);
   }
 }
