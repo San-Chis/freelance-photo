@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": ".",
+    "public": "../photo/",
     "error_page": "/404.html",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
