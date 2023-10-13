@@ -1,0 +1,29 @@
+.zoomed-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(212, 175, 6, 0.9); /* Фон для затемнення */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Вищий z-index, щоб забезпечити, що вікно зуму вище за всім іншим на сторінці */
+}
+
+.zoomed-image {
+  max-width: 100%; /* Максимальна ширина збільшеної фотографії */
+  max-height: 100%; /* Максимальна висота збільшеної фотографії */
+  border: 2px solid white; /* Опціональна рамка */
+}
+
+.zoomed-image-container button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
