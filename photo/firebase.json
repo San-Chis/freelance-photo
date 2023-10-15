@@ -1,78 +1,33 @@
 {
   "hosting": {
     "public": "/",
-
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-
-    "redirects": [
-      {
-        "source": "/foo",
-        "destination": "/bar",
-        "type": 301
-      },
-      {
-        "source": "/firebase/**",
-        "destination": "https://www.firebase.com",
-        "type": 302
-      }
-    ],
-
     "rewrites": [
       {
-        "source": "/app/**",
+        "source": "**",
         "destination": "/index.html"
-      },
-      {
-        "source": "/promos/**",
-        "dynamicLinks": true
-      },
-      {
-        "source": "/bigben",
-        "function": "bigben"
-      },
-      {
-        "source": "/helloworld",
-        "run": {
-          "serviceId": "helloworld",
-          "region": "us-central1"
-        }
       }
     ],
-
     "headers": [
       {
-        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "source": "**/*.js",
         "headers": [
           {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
+            "key": "Content-Type",
+            "value": "application/javascript"
           }
         ]
       },
       {
-        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "source": "**/*.jsx",
         "headers": [
           {
-            "key": "Cache-Control",
-            "value": "max-age=7200"
-          }
-        ]
-      },
-      {
-        "source": "404.html",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=300"
+            "key": "Content-Type",
+            "value": "application/javascript"
           }
         ]
       }
     ],
-
-    "cleanUrls": true,
-
-    "trailingSlash": false,
-
-    "appAssociation": "AUTO"
+    "error_page": "404.html"
   }
 }
