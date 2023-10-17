@@ -6,7 +6,7 @@ const Creative = () => {
     <div className="creative">
       <div className="creative__block">
         <div className="creative__title">
-          <h2>Creative Photo</h2>
+          <h2>Creative Photos</h2>
         </div>
         <div className="creative__tel">
           <Tel />
