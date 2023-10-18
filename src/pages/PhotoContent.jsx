@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import SliderGallery from '../components/SliderGallery'
 
 const PhotoContent = () => {
+  const folderRef = 'content'
   return (
     <div className="photo-content">
       <div className="container">
@@ -11,7 +12,7 @@ const PhotoContent = () => {
           <Title title={'Фото контент'} />
         </div>
         <div className="photo-content__body">
-          <SliderGallery />
+          <SliderGallery folderRef={folderRef} />
         </div>
         <div className="photo-content__footer">
           <Footer />
