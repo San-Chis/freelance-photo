@@ -71,7 +71,7 @@ function SliderGallery({ folderRef }) {
                   data={images.map((image) => ({ image }))}
                   time={2200}
                   width="800px"
-                  height="450px"
+                  height="500px"
                   captionStyle={captionStyle}
                   radius="20px"
                   slideNumber={true}
