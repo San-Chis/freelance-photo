@@ -5,8 +5,17 @@
   @media screen and (max-width: 820px) {
     width: 100%;
   }
+  @media screen and (max-width: 480px) {
+    padding: 10px 2px;
+  }
   &__image {
     padding-bottom: 5px;
+	 img{
+		@media screen and (max-width: 480px){
+			width: 50px;
+			height: 50px;
+		 }
+	 }
   }
   &__title {
     padding-bottom: 5px;
@@ -14,12 +23,22 @@
       color: #ffae2b;
       font-size: 29px;
     }
+    @media screen and (max-width: 480px) {
+      padding-bottom: 3px;
+      h2 {
+        font-size: 24px;
+      }
+    }
   }
   &__text {
     p {
       color: #aca592;
       font-size: 18px;
       line-height: 23px;
+      @media screen and (max-width: 480px) {
+        font-size: 16px;
+        line-height: 18px;
+      }
     }
   }
 }

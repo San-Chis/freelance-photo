@@ -4,6 +4,11 @@
     text-align: center;
     margin-bottom: 20px;
     transform: rotate(180deg);
+    @media screen and (max-width: 450px) {
+      img {
+        width: 100%;
+      }
+    }
   }
   &__title {
     text-align: center;

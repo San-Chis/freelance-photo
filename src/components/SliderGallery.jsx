@@ -6,8 +6,6 @@ import { Carousel } from 'react-carousel-minimal'
 import Title from '../element/Title'
 
 function SliderGallery({ folderRef }) {
-  const [zoomed, setZoomed] = useState(false)
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0)
   const [images, setImages] = useState([])
 
   useEffect(() => {
@@ -51,14 +49,6 @@ function SliderGallery({ folderRef }) {
     fontWeight: 'bold',
   }
 
-  function handleZoomClick() {
-    setZoomed(!zoomed)
-  }
-
-  function handleSlideChange(index) {
-    setActiveSlideIndex(index)
-  }
-
   return (
     <div className="slider-gallery">
       <div className="container">
@@ -70,8 +60,9 @@ function SliderGallery({ folderRef }) {
                 <Carousel
                   data={images.map((image) => ({ image }))}
                   time={2200}
-                  width="800px"
-                  height="500px"
+                  automatic={true}
+                  width="1200px"
+                  height="580px"
                   captionStyle={captionStyle}
                   radius="20px"
                   slideNumber={true}
@@ -86,22 +77,9 @@ function SliderGallery({ folderRef }) {
                   thumbnailWidth="100px"
                   style={{
                     textAlign: 'center',
-                    margin: '50px auto',
+                    margin: '10px ',
                   }}
-                  onClick={handleZoomClick}
-                  onSlideChange={handleSlideChange}
                 />
-              )}
-
-              {zoomed && (
-                <div className="zoomed-image-container">
-                  <img
-                    src={images[activeSlideIndex]}
-                    alt="Zoomed"
-                    className="zoomed-image"
-                  />
-                  <button onClick={handleZoomClick}>Закрити зум</button>
-                </div>
               )}
             </div>
           </div>

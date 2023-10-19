@@ -1,11 +1,15 @@
 .photo-wedding {
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	&__title {
-	  text-align: center;
-	}
-	&__body {
-	}
- }
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (max-width: 750px) {
+    margin-top: 20px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__body {
+    margin-bottom: 80px;
+  }
+}
