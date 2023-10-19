@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <div className="footer__title">
           <h2>
-            Ми у соц сітях чекаємо на вас <span>📸</span>
+            Ми в соцмережах чекаємо на вас <span>📸</span>
           </h2>
         </div>
         <div className="footer__network network-footer">
