@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../element/Title'
 import Footer from '../components/Footer'
 import SliderGallery from '../components/SliderGallery'
+import Tel from '../element/Tel'
 
 const PhotoPortrait = () => {
   const folderRef = 'portrait'
@@ -13,6 +14,9 @@ const PhotoPortrait = () => {
         </div>
         <div className="photo-portrait__body">
           <SliderGallery folderRef={folderRef} />
+        </div>
+        <div className="photo-portrait__tel">
+          <Tel title={'Домовитися о зйомці'} />
         </div>
         <div className="photo-portrait__footer">
           <Footer />

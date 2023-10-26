@@ -23,11 +23,13 @@ const Services = () => {
             image={filming}
             title={'Зйомка'}
             text={'Я роблю все можливе для отримання максимального результату'}
+            price={'2500 грн'}
           />
           <ServicesCard
             image={retouch}
             title={'Ретуш'}
             text={'Роблю обробку ваших фотографій враховуючи ваші побажання'}
+            price={'1000 грн'}
           />
           <ServicesCard
             image={meeting}

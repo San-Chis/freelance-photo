@@ -10,12 +10,12 @@
   }
   &__image {
     padding-bottom: 5px;
-	 img{
-		@media screen and (max-width: 480px){
-			width: 50px;
-			height: 50px;
-		 }
-	 }
+    img {
+      @media screen and (max-width: 480px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
   &__title {
     padding-bottom: 5px;
@@ -31,6 +31,7 @@
     }
   }
   &__text {
+    margin-bottom: 5%;
     p {
       color: #aca592;
       font-size: 18px;
@@ -38,6 +39,18 @@
       @media screen and (max-width: 480px) {
         font-size: 16px;
         line-height: 18px;
+      }
+    }
+  }
+
+  &__price {
+    p {
+      font-size: 25px;
+      line-height: 28px;
+      color: #aca592;
+      @media screen and (max-width: 480px) {
+        font-size: 20px;
+        line-height: 23px;
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ServicesCard = ({ image, title, text }) => {
+const ServicesCard = ({ image, title, text, price }) => {
   return (
     <div className="services-card">
       <div className="services-card__image">
@@ -11,6 +11,9 @@ const ServicesCard = ({ image, title, text }) => {
       </div>
       <div className="services-card__text">
         <p>{text}</p>
+      </div>
+      <div className="services-card__price">
+        <p>{price}</p>
       </div>
     </div>
   )

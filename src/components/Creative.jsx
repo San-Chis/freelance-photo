@@ -7,10 +7,10 @@ const Creative = () => {
       <div className="container">
         <div className="creative__block">
           <div className="creative__title">
-            <h2>Creative Photos</h2>
+            <h2>Creative Photos Kyiv</h2>
           </div>
           <div className="creative__tel">
-            <Tel />
+            <Tel title={"Зв'язатся"} />
           </div>
         </div>
       </div>

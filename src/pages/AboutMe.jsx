@@ -2,6 +2,7 @@ import React from 'react'
 import myphoto from '../img/about-me/myphoto.jpg'
 import Title from '../element/Title'
 import Footer from '../components/Footer'
+import Tel from '../element/Tel'
 
 const AboutMe = () => {
   return (
@@ -29,6 +30,9 @@ const AboutMe = () => {
               буду рада відповісти на всі питання, що вас цікавлять.
             </p>
           </div>
+        </div>
+        <div className="about-me__tel">
+          <Tel title={"Зв'язатся зі мною"} />
         </div>
         <Footer />
       </div>
