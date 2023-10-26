@@ -41,6 +41,16 @@ const Footer = () => {
             <img src={twiter} alt="твітер" />
           </a>
         </div>
+        <div className="footer__line line-footer">
+          <div className="line-footer__block">
+            <p>
+              Powered by <span>MHS</span>
+            </p>
+            <p>
+              © <span>Ksuuu</span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
